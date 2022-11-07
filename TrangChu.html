@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo-house2.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>TITA HOUSE</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a href="./TrangChu.html">
+                <div class="logo">
+                    <img src="./img/logo-house2.png">
+                    <span>TITA</span>House
+                </div>
+            </a>
+
+            <nav class="navbar">
+                <a href="#">Trang chủ</a>
+                <a href="#nice-place">Nổi bật</a>
+                <a href="#about">Giới thiệu</a>
+                <a href="#featured">Danh mục</a>
+                <a href="#review">Phản hồi</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-bars" class="fas fa-bars"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <!-- <a href="#" class="fas fa-user"></a> -->
+            </div>
+            <div class="header__top--register-login">
+                <button class="header__top--register-login-btn btn_login">
+                    <p>Đăng Nhập</p>
+                </button>
+                <hr>
+                <button class="header__top--register-login-btn btn_register">
+                    <p>Đăng Ký</p>
+                </button>
+            </div>
+            <!-- FORM REGISTER -->
+            <div class="register">
+                <div class="register-content">
+                    <div class="close-register">
+                        <button class="btn_close-register"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <h1>Register</h1>
+                    <form>
+                        <div class="form-control">
+                            <input type="text" id="username" name="username" placeholder="Username" />
+                        </div>
+                        <div class="form-control">
+                            <input type="email" id="email" name="email" placeholder="Email" />
+                        </div>
+                        <div class="form-control">
+                            <input type="password" id="password" name="password" placeholder="Password" />
+                        </div>
+                        <div class="form-control">
+                            <input type="password" id="repassword" name="repassword" placeholder="Repassword" />
+                        </div>
+                        <input type="submit" value="REGISTER" />
+                        <div class="signup_link">
+                            I already have an account. <a href="#">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FROM LOGIM -->
+            <div class="login">
+                <div class="login-content">
+                    <div class="close-login">
+                        <button class="btn_close-login"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <h1>Login</h1>
+                    <form>
+                        <div class="form-control">
+                            <input type="text" id="username" name="username" placeholder="Username" />
+                        </div>
+                        <div class="form-control">
+                            <input type="password" id="password" name="password" placeholder="Password" />
+                        </div>
+                        <input type="submit" value="LOGIN" />
+                        <div class="signup_link">
+                            I can't remember my password. <a href="#">Register</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <video src="./video/video-mua-nha.mp4" autoplay muted loop></video>
+
+        </div>
+        <div class="header-content">
+            <h1 class="header-content-h1">Khám phá</h1>
+            <p class="header-content-p">Hãy đến với chúng tôi</p>
+            <form action="">
+                <h1>Bạn muốn ở đâu</h1>
+                <p>Địa điểm</p>
+                <select>
+                    <option value="#">--Chọn địa điểm--</option>
+                    <option value="#" class="js-hanoi">Hà Nội</option>
+                    <option value="#">Đà Nẵng</option>
+                    <option value="#">Hồ Chí Minh</option>
+
+                </select>
+                <p>Số người</p>
+                <input type="number" min="1" placeholder="Bạn muốn ở bao nhiêu người">
+                <p>Ngày thuê</p>
+                <input type="date">
+                <p>Ngày trả</p>
+                <input type="date">
+                <button>Tìm kiếm</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- ---------------Nice place------------------- -->
+    <section id="nice-place" class="nice-place">
+        <div class="container">
+            <h1 class="h1-style">Địa điểm nổi bật</h1>
+            <div class="nice-place-content row">
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="./img/hainoi4.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Hà Nội</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Hà Nội, thủ đô của Việt Nam, là trung tâm đầu não, huyết mạch cho sự phát triển của nền kinh
+                            tế Việt Nam.</p>
+                        <button class="btn">Tìm phòng</button>
+                    </div>
+                </div>
+                <!-- Đà Nẵng -->
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="./img/danang2.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Đà Nẵng</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Đà Nẵng là một thành phố trực thuộc trung ương, nằm trong vùng Duyên hải Nam Trung Bộ là
+                            thành phố lớn nhất khu vực miền Trung - Tây Nguyên.</p>
+                        <button class="btn">Tìm phòng</button>
+                    </div>
+                </div>
+                <!-- Hồ Chí Minh -->
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="./img/hochiminh2.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Hồ Chí Minh</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Thành phố Hồ Chí Minh là một thành phố ở miền nam và là thành phố công nghiệp sầm uất nhất
+                            Việt Nam.</p>
+                        <button class="btn">Tìm phòng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------About------------------- -->
+    <div id="about" class="about">
+        <div class="container">
+            <h1 class="h1-style">Về chúng tôi</h1>
+            <div class="about-content row">
+                <div class="about-content-left">
+                    <img src="./img/about.jpg">
+                </div>
+                <div class="about-content-right">
+                    <h2>Tại sao bạn nên chọn chúng tôi</h2>
+                    <p>Chúng tôi là công ty hàng đầu về dịch vụ cho thuê, tìm kiếm phòng trọ. Mọi người sẽ dễ dàng tìm
+                        phòng theo loại hình phòng trọ cần thuê như là: phòng, nhà nguyên căn, căn hộ, hay là mặt bằng
+                        để kinh doanh. Thông tin về phòng cho thuê cũng được phân theo tỉnh thành, quận huyện và đường
+                        phố để tiện lợi cho bạn chọn khu vực. Các cậu cũng có thể chọn diện tích phòng phù hợp với nhu
+                        cầu của mình để lọc kết quả tìm kiếm nữa.</p>
+                    <button class="btn">Tìm hiểu thêm</button>
+                </div>
+            </div>
+            <div class="service row">
+                <div class="service-item">
+                    <img src="./img/hotel.png" style="height: 150px;" alt="">
+                    <p>Đặt phòng</p>
+                </div>
+                <div class="service-item">
+                    <img src="./img/pay-online.png" style="margin-top: 8px;" alt="">
+                    <p>Dịch vụ 24/7</p>
+                </div>
+                <div class="service-item">
+                    <img src="./img/hdsd6.png" style="margin-top: 30px;" alt="">
+                    <p>Guide book</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- -----------------FEATURDE------------------------ -->
+    <section id="featured" class="featured container">
+
+        <h1 class="heading h1-style">Danh sách bài đăng</h1>
+
+        <div class="box-container row">
+
+            <div class="box">
+                <a href="./SanPham.html">
+                    <div class="image-container">
+                        <img src="./img/tro6.jpg" alt="">
+                        <div class="info">
+                            <h3>3 days ago</h3>
+                            <h3>for rent</h3>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-film">
+                                <h3>1</h3>
+                            </a>
+                            <a href="#" class="fas fa-camera">
+                                <h3>4</h3>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <div class="content">
+                    <div class="price">
+                        <h3>2.5Triệu/tháng</h3>
+                        <a href="#1" class="fas fa-heart"></a>
+                        <a href="mailto::thangdt.21it@vku.udn.vn" class="fas fa-envelope"></a>
+                        <a href="tel::03357000999" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Cho thuê phòng</h3>
+                        <p>Đường Nam Kỳ Khởi Nghĩa,P.Hòa Hải, Q. Ngũ Hành Sơn, Đà Nẵng</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 3500 m<sup>2</sup> </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <form action="./SanPham.html">
+                            <button class="btn">Xem ngay</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="./SanPham.html">
+                    <div class="image-container">
+                        <img src="./img/tro7.jpg" alt="">
+                        <div class="info">
+                            <h3>6 days ago</h3>
+                            <h3>for sell</h3>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-film">
+                                <h3>2</h3>
+                            </a>
+                            <a href="#" class="fas fa-camera">
+                                <h3>7</h3>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <div class="content">
+                    <div class="price">
+                        <h3>3Triệu/tháng</h3>
+                        <a href="#2" class="fas fa-heart"></a>
+                        <a href="mailto::thangdt.21it@vku.udn.vn" class="fas fa-envelope"></a>
+                        <a href="tel::03357000999" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Cho thuê phòng</h3>
+                        <p>71 Ngũ Hành Sơn, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng, Việt Nam</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 3500 m<sup>2</sup> </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <form action="./SanPham.html">
+                            <button class="btn">Xem ngay</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="./SanPham.html">
+
+                    <div class="image-container">
+                        <img src="./img/tro10.jpg" alt="">
+                        <div class="info">
+                            <h3>1 days ago</h3>
+                            <h3>for rent</h3>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-film">
+                                <h3>1</h3>
+                            </a>
+                            <a href="#" class="fas fa-camera">
+                                <h3>6</h3>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <div class="content">
+                    <div class="price">
+                        <h3>1.5Triệu/tháng</h3>
+                        <a href="#3" class="fas fa-heart"></a>
+                        <a href="mailto::thangdt.21it@vku.udn.vn" class="fas fa-envelope"></a>
+                        <a href="tel::03357000999" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Cho thuê phòng</h3>
+                        <p>459 Tôn Đức Thắng, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 3500 m<sup>2</sup> </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <form action="./SanPham.html">
+                            <button class="btn">Xem ngay</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="./SanPham.html">
+                    <div class="image-container">
+                        <img src="./img/img-4.jpg" alt="">
+                        <div class="info">
+                            <h3>9 days ago</h3>
+                            <h3>for rent</h3>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-film">
+                                <h3>2</h3>
+                            </a>
+                            <a href="#" class="fas fa-camera">
+                                <h3>6</h3>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <div class="content">
+                    <div class="price">
+                        <h3>4.5Triệu/tháng</h3>
+                        <a href="#4" class="fas fa-heart"></a>
+                        <a href="mailto::thangdt.21it@vku.udn.vn" class="fas fa-envelope"></a>
+                        <a href="tel::03357000999" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Cho thuê phòng</h3>
+                        <p>54 Nguyễn Lương Bằng, Hoà Khánh Bắc, Liên Chiểu, Đà Nẵng</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 3500 m<sup>2</sup> </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <form action="./SanPham.html">
+                            <button class="btn">Xem ngay</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="./SanPham.html">
+                    <div class="image-container">
+                        <img src="./img/img-5.jpg" alt="">
+                        <div class="info">
+                            <h3>10 days ago</h3>
+                            <h3>for sell</h3>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-film">
+                                <h3>3</h3>
+                            </a>
+                            <a href="#" class="fas fa-camera">
+                                <h3>8</h3>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <div class="content">
+                    <div class="price">
+                        <h3>4Triệu/tháng</h3>
+                        <a href="#5" class="fas fa-heart"></a>
+                        <a href="mailto::thangdt.21it@vku.udn.vn" class="fas fa-envelope"></a>
+                        <a href="tel::03357000999" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Cho thuê phòng</h3>
+                        <p>41 Đ. Lê Duẩn, Hải Châu 1, Hải Châu, Đà Nẵng</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 3500 m<sup>2</sup> </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <form action="./SanPham.html">
+                            <button class="btn">Xem ngay</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="./SanPham.html">
+                    <div class="image-container">
+                        <img src="./img/img-6.jpg" alt="">
+                        <div class="info">
+                            <h3>3 days ago</h3>
+                            <h3>for sell</h3>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-film">
+                                <h3>1</h3>
+                            </a>
+                            <a href="#" class="fas fa-camera">
+                                <h3>4</h3>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <div class="content">
+                    <div class="price">
+                        <h3>5.5Triệu/tháng</h3>
+                        <a href="#6" class="fas fa-heart"></a>
+                        <a href="mailto::thangdt.21it@vku.udn.vn" class="fas fa-envelope"></a>
+                        <a href="tel::03357000999" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Cho thuê phòng</h3>
+                        <p>131 Lương Nhữ Hộc, Khuê Trung, Cẩm Lệ, Đà Nẵng</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 3500 m<sup>2</sup> </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <form action="./SanPham.html">
+                            <button class="btn">Xem ngay</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ---------------------FEATURED-END------------------------ -->
+
+
+    <!-- ----------------------REVIEW---------------------------- -->
+    <section id="review" class="review">
+        <div class="container">
+            <h1 class="h1-style">Phản hồi</h1>
+            <div class="review-content row">
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="./img/messenger1.png" alt="">
+                        <p><span>&ldquo;</span><span>Phòng trọ rất đẹp, không khí thoáng đãng, cảnh quan nhìn từ phòng
+                                rất tuyệt vời, vị trí đi lại thuận tiện, chủ nhà thân thiện. Nhất định sẽ quay lại lần
+                                sau</span><span>&ldquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="./img/user.png" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Trần Ngọc Tiến</h2>
+                            <p>Ngày 19/5/2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="./img/messenger1.png" alt="">
+                        <p><span>&ldquo;</span><span>Thật tuyệt vời khi được đến đây. Người dân rất thân thiện, lễ tân
+                                cực kỳ vui tính và tốt bụng. Cảnh quan tuyệt vời. Hãy đến nơi đây một lần, bạn không hối
+                                tiếc về điều đó</span><span>&ldquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="./img/user2.png" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Nguyễn Quang Bảo</h2>
+                            <p>Ngày 22/5/2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="./img/messenger1.png" alt="">
+                        <p><span>&ldquo;</span><span>Chủ nhà và mọi người rất tốt bụng và thân thiện. Địa điểm ngay
+                                trung tâm, thuận lợi di chuyển, ăn uống vui chơi. Phòng rất sạch sẽ, đầy đủ tiện
+                                nghi</span><span>&ldquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="./img/user3.png" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Võ Trọng Đạt</h2>
+                            <p>Ngày 24/5/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /* -----------------------CONTACT------------------------- */ -->
+    <section id="contact" class="contact">
+        <form action="">
+            <div class="container">
+                <h1 class="h1-style">Liên hệ</h1>
+                <div class="contact-content-top row">
+                    <div class="contact-content-item">
+                        <input type="text" required placeholder="Tên">
+                    </div>
+                    <div class="contact-content-item">
+                        <input type="text" required placeholder="Địa chỉ">
+                    </div>
+                    <div class="contact-content-item">
+                        <input type="email" required placeholder="Email">
+                    </div>
+                    <div class="contact-content-item">
+                        <input type="number" required placeholder="Số điện thoại">
+                    </div>
+                </div>
+                <div class="contact-content-bottom row">
+                    <textarea required placeholder="Nội dung"></textarea>
+                    <button class="btn">Gửi</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- --------------FOOTER-START--------------- -->
+    <section id="footer">
+        <footer>
+
+            <div class="row container">
+                <div class="column">
+                    <h1 style="font-size: 18px;">THÔNG TIN</h1>
+                    <p>Công ty Cổ phần TITA House</p> <br>
+                    <p class="add">Địa chỉ: 470 Trần Đại Nghĩa-Hoà Hải-Ngũ Hành Sơn-Việt Nam</p> <br>
+                    <p>SĐT: 0357 000 999</p>
+                    <img class="congthuong" src="./img/congthuong-logo.png" alt="">
+
+                </div>
+
+                <div class="column">
+                    <div class="info">
+                        <h2><b>LIÊN LẠC</b></h2>
+                        <br>
+                        <a href="https://www.facebook.com/ThienThang0107">Đỗ Thiên Thắng</a>
+                        <br>
+                        <a href="#https://www.facebook.com/tinhchuc01102203">Cao Văn Tính</a>
+                        <br>
+                        <!-- <p class="school">Sinh viên Công Nghệ thông tin - Đại học Công nghệ thông tin và Truyền thông
+                            Việt - Hàn</p> -->
+                        <br>
+                        <a href="tel::0357 000 999">0357 000 999</a>
+                        <br>
+                        <a href="mailto:thangdt.21it@vku.udn.vn">thangdt.21it@vku.udn.vn</a> <br>
+                        <a href="mailto:tinhcv.21it@vku.udn.vn">tinhcv.21it@vku.udn.vn</a>
+                    </div>
+
+                </div>
+
+                <div class="column">
+                    <div class="download">
+                        <h2 class="download-tittle"><b>DOWNLOAD APP</b></h2> <br>
+
+                        <div class="dowload-1">
+                            <a href=""><img src="./img/appstore.png" class="app"></a>
+                        </div>
+                        <div class="dowload-1">
+                            <a href=""><img src="./img/googleplay.png" class="app"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </footer>
+
+
+    </section>
+    <!-- --------------FOOTER-START--------------- -->
+
+    <script src="./JavaScript/jscript.js"></script>
+</body>
+
+</html>
